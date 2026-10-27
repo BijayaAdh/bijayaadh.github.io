@@ -75,6 +75,15 @@ main > section + section { margin-top: 42px; }
 .venue { color: var(--green); font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: .65px; }
 .publication-status { font-size: 10px; color: var(--muted); }
 .publication h3 { margin: 0 0 9px; line-height: 1.5; letter-spacing: -.1px; }
+.publication-heading { position: relative; display: flex; align-items: flex-start; gap: 10px; margin-bottom: 9px; }
+.publication-heading h3 { flex: 1; min-width: 0; margin: 0; }
+.publication-recognition { flex: 0 0 36px; margin: -6px 0; }
+.publication-recognition summary { display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; padding: 4px; border-radius: 50%; color: #91671e; list-style: none; }
+.publication-recognition summary::-webkit-details-marker { display: none; }
+.publication-recognition summary::marker { content: ''; }
+.publication-recognition summary:hover, .publication-recognition[open] summary { background: #f1e7d3; color: #745015; }
+.publication-recognition svg { display: block; width: 28px; height: 28px; fill: #f3e5c5; }
+.recognition-note { position: absolute; z-index: 3; top: calc(100% + 6px); right: 0; width: min(280px, calc(100vw - 44px)); padding: 12px 14px; margin: 0; background: var(--paper); border: 1px solid #d9c9a6; border-radius: 5px; box-shadow: 0 5px 16px rgb(38 46 42 / 10%); color: var(--ink); font-size: 12px; line-height: 1.65; font-weight: 400; }
 .citation { color: var(--muted); font-size: 12px; line-height: 1.75; margin: 0; }
 .citation strong { color: #3e4840; font-weight: 600; }
 .citation .student-author { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
