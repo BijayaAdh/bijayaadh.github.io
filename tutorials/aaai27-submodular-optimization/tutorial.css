@@ -1,0 +1,91 @@
+.tutorial-main { max-width: 1080px; margin: 0 auto; padding: 0 32px 76px; }
+.tutorial-main > section + section { margin-top: 64px; }
+.tutorial-hero { padding: 66px 0 50px; border-bottom: 1px solid var(--line); }
+.tutorial-hero .eyebrow { color: var(--green); font-size: 11px; letter-spacing: 1.8px; }
+.tutorial-hero .eyebrow a { text-decoration: none; }
+.tutorial-hero .eyebrow span { display: inline-block; margin: 0 13px; color: #a7aaa0; }
+.tutorial-hero h1 { font-size: clamp(40px, 5.2vw, 60px); letter-spacing: -2px; line-height: 1.12; margin: 24px 0; max-width: 860px; }
+.tutorial-deck { font-size: 19px; line-height: 1.7; color: var(--muted); margin-bottom: 25px; }
+.tutorial-byline { display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 13px; }
+.tutorial-byline a { font-weight: 600; text-decoration: none; }
+.tutorial-byline span { color: var(--muted); }
+.tutorial-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 20px 26px; margin-top: 30px; }
+.tutorial-button { display: inline-flex; gap: 25px; align-items: center; padding: 12px 18px; background: var(--green); color: white; font-size: 12px; text-decoration: none; border: 1px solid var(--green); border-radius: 3px; }
+.tutorial-button:hover { color: white; background: #244635; text-decoration: none; }
+.section-number { color: var(--green); margin-bottom: 16px; }
+.tutorial-overview { display: grid; grid-template-columns: minmax(0, 1fr) 270px; gap: 60px; align-items: start; }
+.tutorial-overview h2 { font-size: 34px; margin-bottom: 24px; line-height: 1.22; }
+.tutorial-overview p:not(.eyebrow) { font-size: 14px; color: #484f49; }
+.tutorial-attendees { background: #f0f2eb; border-top: 3px solid var(--green); padding: 25px; margin-top: 4px; }
+.tutorial-attendees h3 { font-size: 15px; margin: 10px 0 12px; }
+.tutorial-attendees h3:not(:first-of-type) { margin-top: 24px; }
+.tutorial-attendees p:not(.eyebrow) { font-size: 12px; line-height: 1.8; }
+.tutorial-attendees .prerequisite-note { margin: 22px 0 0; padding-top: 18px; border-top: 1px solid #d4dccd; }
+.tutorial-outcomes { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 30px 0; }
+.tutorial-outcomes h2 { font-size: 24px; margin-bottom: 23px; }
+.tutorial-outcomes ol { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 35px; }
+.tutorial-outcomes strong { font-size: 14px; color: var(--green); }
+.tutorial-outcomes p { font-size: 12px; color: var(--muted); line-height: 1.8; margin: 8px 0 0; }
+.tutorial-section-heading { margin-bottom: 24px; }
+.tutorial-section-heading h2 { margin-bottom: 12px; font-size: 31px; }
+.tutorial-section-heading p { color: var(--muted); font-size: 13px; }
+.tutorial-program { list-style: none; padding: 0; margin: 0; counter-reset: topic; }
+.tutorial-program li { counter-increment: topic; display: grid; grid-template-columns: 52px minmax(0, 1fr); gap: 12px; padding: 23px 0; border-top: 1px solid var(--line); }
+.tutorial-program li:last-child { border-bottom: 1px solid var(--line); }
+.tutorial-program li::before { content: counter(topic, decimal-leading-zero); font-family: var(--serif); font-size: 25px; color: #8b9589; line-height: 1.3; }
+.tutorial-program h3 { margin: 0 0 7px; font-size: 15px; }
+.tutorial-program p { margin: 0; font-size: 13px; color: var(--muted); max-width: 760px; }
+.materials-note { display: flex; flex-wrap: wrap; gap: 4px 20px; padding: 16px 20px; background: #f0f0e7; border-left: 3px solid var(--gold); font-size: 12px; }
+.materials-note span { color: var(--muted); }
+.tutorial-readings { padding-left: 24px; margin: 28px 0 0; }
+.tutorial-readings li { padding: 0 0 22px 10px; font-size: 12px; color: var(--muted); }
+.tutorial-readings li:last-child { padding-bottom: 0; }
+.reading-topic { color: var(--green); text-transform: uppercase; font-size: 9px; font-weight: 600; letter-spacing: 1px; }
+.tutorial-readings h3 { font-size: 14px; margin: 5px 0; line-height: 1.6; }
+.tutorial-readings h3 a { text-decoration: none; }
+.tutorial-readings h3 a:hover { text-decoration: underline; }
+.tutorial-readings p { margin: 0; line-height: 1.8; }
+.reading-version { color: var(--muted); }
+#presenter { border-top: 1px solid var(--line); padding-top: 34px; }
+.tutorial-presenter { display: grid; grid-template-columns: 170px minmax(0, 1fr); gap: 35px; align-items: start; }
+.tutorial-presenter img { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; border-radius: 3px; }
+.tutorial-presenter h2 { font-size: 30px; margin: 0 0 8px; }
+.presenter-affiliation { color: var(--green); font-size: 12px; }
+.tutorial-presenter p:not(.presenter-affiliation) { font-size: 13px; color: #484f49; }
+.presenter-links { display: flex; flex-wrap: wrap; gap: 8px 25px; font-size: 12px; overflow-wrap: anywhere; }
+@media (max-width: 900px) {
+  .tutorial-overview { grid-template-columns: minmax(0, 1fr) 240px; gap: 32px; }
+  .tutorial-attendees { padding: 22px; }
+}
+@media (max-width: 700px) {
+  .tutorial-main { padding: 0 22px 48px; }
+  .tutorial-main > section + section { margin-top: 44px; }
+  .tutorial-hero { padding: 38px 0; }
+  .tutorial-hero h1 { font-size: clamp(34px, 7vw, 45px); letter-spacing: -1.2px; }
+  .tutorial-deck { font-size: 16px; }
+  .desktop-break { display: none; }
+  .tutorial-overview { display: block; }
+  .tutorial-overview h2 { font-size: 30px; }
+  .tutorial-attendees { margin-top: 30px; }
+  .tutorial-outcomes ol { grid-template-columns: 1fr; gap: 20px; }
+  .tutorial-outcomes p { margin-top: 5px; }
+  .tutorial-section-heading h2 { font-size: 28px; }
+  .tutorial-program li { grid-template-columns: 34px minmax(0, 1fr); }
+  .tutorial-presenter { grid-template-columns: 110px minmax(0, 1fr); gap: 24px; }
+  .tutorial-presenter h2 { font-size: 26px; }
+}
+@media (max-width: 450px) {
+  .tutorial-presenter { display: block; }
+  .tutorial-presenter img { width: 130px; margin-bottom: 22px; }
+  .tutorial-hero .eyebrow { font-size: 10px; }
+  .tutorial-hero .eyebrow span { margin: 0 8px; }
+}
+@media print {
+  .tutorial-main { max-width: none; padding: 0; }
+  .tutorial-hero { padding-top: 0; }
+  .tutorial-actions { display: none; }
+  .tutorial-main > section + section { margin-top: 28px; }
+  .tutorial-overview { display: block; }
+  .tutorial-attendees, .tutorial-outcomes, .tutorial-program li, .tutorial-readings li, .tutorial-presenter { break-inside: avoid; }
+  .tutorial-attendees { margin-top: 25px; }
+}
