@@ -23,7 +23,6 @@
     <a class="wordmark" href="../../index.html">Bijaya Adhikari</a>
     <nav aria-label="Tutorial navigation">
       <a href="#overview">Overview</a>
-      <a href="#program">Program</a>
       <a href="#materials">Materials</a>
       <a href="#presenter">Presenter</a>
     </nav>
@@ -33,69 +32,64 @@
   <section class="tutorial-hero" aria-labelledby="tutorial-title">
     <p class="eyebrow"><a href="https://aaai.org/conference/aaai/aaai-27/">AAAI-27</a> <span aria-hidden="true">/</span> Lecture tutorial</p>
     <h1 id="tutorial-title">Advances in<br>Submodular Optimization</h1>
-    <p class="tutorial-deck">From classical set functions to multi-unit decisions,<br class="desktop-break"> curvature, and approximate diminishing returns.</p>
     <p class="tutorial-byline"><a href="#presenter">Bijaya Adhikari</a><span>University of Iowa</span></p>
-    <div class="tutorial-actions"><a class="tutorial-button" href="#program">Explore the program <span aria-hidden="true">↓</span></a><a class="text-link" href="#prerequisites">Audience &amp; prerequisites <span aria-hidden="true">↗</span></a></div>
   </section>
 
-  <section id="overview" class="tutorial-overview" aria-labelledby="overview-title">
-    <div>
-      <p class="eyebrow section-number">01 / Overview</p>
-      <h2 id="overview-title">Submodularity for<br>AI decision making</h2>
-      <p>Submodular optimization provides a powerful framework for AI decision problems in which the benefit of an action decreases as more actions are taken. This tutorial introduces the foundations of submodularity and explores advances that extend its reach from selecting sets to allocating multiple units of a resource, handling richer constraints, and optimizing objectives that exhibit diminishing returns only approximately.</p>
-      <p>We begin with classical submodular set functions, greedy algorithms, and approximation guarantees. We then examine diminishing-returns (DR) submodularity over integer lattices, with an emphasis on multi-unit resource allocation, and briefly connect these ideas to continuous domains. Topics include reductions from integer-lattice problems to set-submodular optimization and scalable algorithms under cardinality and knapsack constraints. We next discuss how curvature captures additional structure and can strengthen approximation guarantees, followed by approximate and weak submodularity and composite objectives combining submodular and supermodular components.</p>
-      <p>Throughout the tutorial, examples from data and feature selection, influence propagation, sensing and coverage, recommendation, and resource allocation for social good will connect theoretical ideas to AI applications.</p>
-    </div>
-    <aside id="prerequisites" class="tutorial-attendees" aria-labelledby="attendees-title">
-      <p class="eyebrow">Before you attend</p>
-      <h3 id="attendees-title">Who is this for?</h3>
-      <p>Researchers, practitioners, and graduate students in AI, machine learning, optimization, and related fields.</p>
-      <h3>Prerequisites</h3>
-      <p>Basic familiarity with algorithms, discrete optimization, and standard mathematical notation.</p>
-      <p>Exposure to greedy algorithms, approximation algorithms, or constrained optimization is helpful but not required.</p>
-      <p class="prerequisite-note">No prior knowledge of submodular optimization is assumed. We introduce the necessary definitions and intuition.</p>
-    </aside>
+  <section id="overview" aria-labelledby="overview-title">
+    <h2 id="overview-title">Overview</h2>
+    <p>Submodular optimization provides a powerful framework for AI decision problems in which the benefit of an action decreases as more actions are taken. This tutorial introduces the foundations of submodularity and explores advances that extend its reach from selecting sets to allocating multiple units of a resource, handling richer constraints, and optimizing objectives that exhibit diminishing returns only approximately.</p>
+    <p>We begin with classical submodular set functions, greedy algorithms, and approximation guarantees. We then examine diminishing-returns (DR) submodularity over integer lattices, with an emphasis on multi-unit resource allocation, and briefly connect these ideas to continuous domains. Topics include reductions from integer-lattice problems to set-submodular optimization and scalable algorithms under cardinality and knapsack constraints. We next discuss how curvature captures additional structure and can strengthen approximation guarantees, followed by approximate and weak submodularity and composite objectives combining submodular and supermodular components.</p>
+    <p>Throughout the tutorial, examples from data and feature selection, influence propagation, sensing and coverage, recommendation, and resource allocation for social good will connect theoretical ideas to AI applications.</p>
   </section>
 
-  <section class="tutorial-outcomes" aria-labelledby="outcomes-title">
-    <h2 id="outcomes-title">What you will take away</h2>
-    <ol>
-      <li><strong>Recognize the structure</strong><p>Identify diminishing returns in AI objectives and distinguish set, integer-lattice, and continuous formulations.</p></li>
-      <li><strong>Build the model</strong><p>Express selection and multi-unit allocation decisions with appropriate objectives and resource constraints.</p></li>
-      <li><strong>Choose an algorithm</strong><p>Connect problem structure to scalable methods and understand what their approximation guarantees depend on.</p></li>
-    </ol>
+  <section id="audience" aria-labelledby="audience-title">
+    <h2 id="audience-title">Target Audience</h2>
+    <p>Researchers, practitioners, and graduate students in AI, machine learning, optimization, and related fields.</p>
+  </section>
+
+  <section id="prerequisites" aria-labelledby="prerequisites-title">
+    <h2 id="prerequisites-title">Prerequisites</h2>
+    <p>Basic familiarity with algorithms, discrete optimization, and standard mathematical notation. Exposure to greedy algorithms, approximation algorithms, or constrained optimization is helpful but not required.</p>
+    <p>No prior knowledge of submodular optimization is assumed. We introduce the necessary definitions and intuition.</p>
+  </section>
+
+  <section aria-labelledby="outcomes-title">
+    <h2 id="outcomes-title">Learning Objectives</h2>
+    <ul class="tutorial-objectives">
+      <li>Identify diminishing returns in AI objectives and distinguish set, integer-lattice, and continuous formulations.</li>
+      <li>Express selection and multi-unit allocation decisions with appropriate objectives and resource constraints.</li>
+      <li>Connect problem structure to scalable methods and understand what their approximation guarantees depend on.</li>
+    </ul>
   </section>
 
   <section id="program" aria-labelledby="program-title">
-    <p class="eyebrow section-number">02 / Program</p>
-    <div class="tutorial-section-heading"><h2 id="program-title">From foundations to applications</h2><p>The lecture connects algorithmic ideas to concrete AI modeling examples.</p></div>
-    <ol class="tutorial-program">
-      <li><div><h3>Motivation and AI applications</h3><p>Where diminishing returns arise, why they matter, and how submodularity supports decision making under limited resources.</p></div></li>
-      <li><div><h3>Foundations of submodular optimization</h3><p>Set functions, marginal gains, monotonicity, greedy algorithms, and approximation guarantees.</p></div></li>
-      <li><div><h3>DR-submodularity and multi-unit allocation</h3><p>Diminishing returns over integer lattices, the distinction from lattice submodularity, and a brief connection to continuous domains.</p></div></li>
-      <li><div><h3>Reductions and scalable algorithms</h3><p>Connections to set-submodular optimization, direct lattice methods, and cardinality and knapsack constraints.</p></div></li>
-      <li><div><h3>Curvature and stronger guarantees</h3><p>How the strength of diminishing returns captures additional structure and informs approximation analysis.</p></div></li>
-      <li><div><h3>Approximate submodularity and composite objectives</h3><p>Weak and approximate diminishing returns, the submodularity ratio, and objectives combining submodular and supermodular components.</p></div></li>
-      <li><div><h3>AI modeling examples</h3><p>Resource allocation, data and feature selection, influence propagation, sensing and coverage, recommendation, and social good.</p></div></li>
-      <li><div><h3>Open directions and discussion</h3><p>Bringing the frameworks together, identifying research questions, and discussing applications with attendees.</p></div></li>
-    </ol>
+    <h2 id="program-title">Program</h2>
+    <ul class="tutorial-program">
+      <li><strong>Motivation and AI applications.</strong> Where diminishing returns arise, why they matter, and how submodularity supports decision making under limited resources.</li>
+      <li><strong>Foundations of submodular optimization.</strong> Set functions, marginal gains, monotonicity, greedy algorithms, and approximation guarantees.</li>
+      <li><strong>DR-submodularity and multi-unit allocation.</strong> Diminishing returns over integer lattices, the distinction from lattice submodularity, and a brief connection to continuous domains.</li>
+      <li><strong>Reductions and scalable algorithms.</strong> Connections to set-submodular optimization, direct lattice methods, and cardinality and knapsack constraints.</li>
+      <li><strong>Curvature and stronger guarantees.</strong> How the strength of diminishing returns captures additional structure and informs approximation analysis.</li>
+      <li><strong>Approximate submodularity and composite objectives.</strong> Weak and approximate diminishing returns, the submodularity ratio, and objectives combining submodular and supermodular components.</li>
+      <li><strong>AI modeling examples.</strong> Resource allocation, data and feature selection, influence propagation, sensing and coverage, recommendation, and social good.</li>
+      <li><strong>Open directions and discussion.</strong> Bringing the frameworks together, identifying research questions, and discussing applications with attendees.</li>
+    </ul>
   </section>
 
   <section id="materials" aria-labelledby="materials-title">
-    <p class="eyebrow section-number">03 / Materials</p>
-    <div class="tutorial-section-heading"><h2 id="materials-title">Reading and resources</h2><p>These optional readings cover the tutorial’s main foundations. Prior reading is not required.</p></div>
-    <p class="materials-note"><strong>Tutorial slides</strong><span>Slides will be posted here when available.</span></p>
-    <ol class="tutorial-readings">
-      <li><span class="reading-topic">Foundations</span><h3><a href="https://www.cs.cmu.edu/~dgolovin/papers/submodular_survey12.pdf">Submodular Function Maximization</a></h3><p>Andreas Krause and Daniel Golovin. <cite>Tractability: Practical Approaches to Hard Problems</cite>, 2014. <span class="reading-version">Linked version: author manuscript.</span></p></li>
-      <li><span class="reading-topic">Integer lattices</span><h3><a href="https://arxiv.org/abs/1503.01218">Maximizing Monotone Submodular Functions over the Integer Lattice</a></h3><p>Tasuku Soma and Yuichi Yoshida. <cite>Mathematical Programming</cite>, 2018. <span class="reading-version">Linked version: preprint.</span></p></li>
-      <li><span class="reading-topic">Reductions</span><h3><a href="https://arxiv.org/abs/1606.08362">A Reduction for Optimizing Lattice Submodular Functions with Diminishing Returns</a></h3><p>Alina Ene and Huy L. Nguyen. arXiv, 2016.</p></li>
-      <li><span class="reading-topic">Curvature</span><h3><a href="https://arxiv.org/abs/1311.4728">Optimal Approximation for Submodular and Supermodular Optimization with Bounded Curvature</a></h3><p>Maxim Sviridenko, Jan Vondrák, and Justin Ward. <cite>Mathematics of Operations Research</cite>, 2017. <span class="reading-version">Linked version: preprint.</span></p></li>
-      <li><span class="reading-topic">Approximate submodularity</span><h3><a href="https://jmlr.org/papers/v19/16-534.html">Approximate Submodularity and its Applications: Subset Selection, Sparse Approximation and Dictionary Selection</a></h3><p>Abhimanyu Das and David Kempe. <cite>Journal of Machine Learning Research</cite>, 2018.</p></li>
-    </ol>
+    <h2 id="materials-title">Materials</h2>
+    <p>These optional readings cover the tutorial’s main foundations. Prior reading is not required.</p>
+    <p>Slides will be posted here when available.</p>
+    <ul class="tutorial-readings">
+      <li><a class="reading-title" href="https://www.cs.cmu.edu/~dgolovin/papers/submodular_survey12.pdf">Submodular Function Maximization</a><p>Andreas Krause and Daniel Golovin. <cite>Tractability: Practical Approaches to Hard Problems</cite>, 2014. <span class="reading-version">Linked version: author manuscript.</span></p></li>
+      <li><a class="reading-title" href="https://arxiv.org/abs/1503.01218">Maximizing Monotone Submodular Functions over the Integer Lattice</a><p>Tasuku Soma and Yuichi Yoshida. <cite>Mathematical Programming</cite>, 2018. <span class="reading-version">Linked version: preprint.</span></p></li>
+      <li><a class="reading-title" href="https://arxiv.org/abs/1606.08362">A Reduction for Optimizing Lattice Submodular Functions with Diminishing Returns</a><p>Alina Ene and Huy L. Nguyen. arXiv, 2016.</p></li>
+      <li><a class="reading-title" href="https://arxiv.org/abs/1311.4728">Optimal Approximation for Submodular and Supermodular Optimization with Bounded Curvature</a><p>Maxim Sviridenko, Jan Vondrák, and Justin Ward. <cite>Mathematics of Operations Research</cite>, 2017. <span class="reading-version">Linked version: preprint.</span></p></li>
+      <li><a class="reading-title" href="https://jmlr.org/papers/v19/16-534.html">Approximate Submodularity and its Applications: Subset Selection, Sparse Approximation and Dictionary Selection</a><p>Abhimanyu Das and David Kempe. <cite>Journal of Machine Learning Research</cite>, 2018.</p></li>
+    </ul>
   </section>
 
   <section id="presenter" aria-labelledby="presenter-title">
-    <p class="eyebrow section-number">04 / Presenter</p>
     <div class="tutorial-presenter">
       <img src="../../assets/img/portrait.jpg" alt="Bijaya Adhikari" width="440" height="440" loading="lazy">
       <div><h2 id="presenter-title">Bijaya Adhikari</h2><p class="presenter-affiliation">Associate Professor · University of Iowa</p>
